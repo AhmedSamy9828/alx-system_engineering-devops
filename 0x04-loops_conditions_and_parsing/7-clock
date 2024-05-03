@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This  script gives you information about the school file.
+
+
+min=1
+hour=0
+echo "Hour: $hour"
+while ((hour <= 12))
+do
+	while ((min < 60))
+	do
+		echo "$min"
+		((min++))
+	done
+	min=1
+	((++hour))
+	if ((hour <= 12))
+	then
+		echo "Hour: $hour"
+	fi
+done
